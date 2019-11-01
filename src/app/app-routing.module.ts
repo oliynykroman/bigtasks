@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RoutersComponent } from './routers/routers.component';
+import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  { path: 'routers', component: RoutersComponent }
+  { path: 'routes/:id', loadChildren: () => import('./pages/routing-test/routing-test.module').then(mod => mod.RoutingTestModule) }
 ];
 
 @NgModule({
