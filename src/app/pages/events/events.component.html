@@ -1,0 +1,7 @@
+<h3>Bubbling check</h3>
+
+<div class="parent" (click)="parentClick($event)">
+    <div class="child" (click)="childClick($event)">
+        <a #listener href="https://www.google.com" class="inner-child" (click)="hrefClick($event)">iiner child</a>
+    </div>
+</div>
