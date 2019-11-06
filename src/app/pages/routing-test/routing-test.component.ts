@@ -9,7 +9,10 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 export class RoutingTestComponent implements OnInit {
   id: string = '';
   idObservabe: string = '';
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private route: ActivatedRoute,
+
+  ) { }
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
@@ -17,6 +20,8 @@ export class RoutingTestComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       this.idObservabe = params.get('id');
     });
+
+
   }
 
 }

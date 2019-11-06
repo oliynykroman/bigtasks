@@ -1,0 +1,9 @@
+<h2>test service injectable</h2>
+
+<button (click)="inRoot()">get providedIn root data (if possible)</button>
+<button (click)="notInRoot()">get not provided in root data (if possible)</button>
+<button (click)="notInjectable()">get not provided @Injectable (if possible)</button>
+
+<p>providedIn : {{providedInData}} </p>
+<p>simple data : {{simpleData}} </p>
+<p>data without @injectable : {{noInjectable}} </p>
