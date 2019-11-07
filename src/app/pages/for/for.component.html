@@ -7,9 +7,14 @@
     </thead>
     <tbody>
         <tr *ngFor="let hero of heroes; let even = even; let odd = odd; trackBy: trackHero"
-        [ngClass]="{ odd: odd, even: even }">
+            [ngClass]="{ odd: odd, even: even }">
             <td>{{hero.name}}</td>
             <td>{{hero.id}}</td>
         </tr>
     </tbody>
 </table>
+
+<h2>Check pipe Async (simulate get data intervals)</h2>
+<button (click)="showUkrainianHero()">start intervals hero data</button>
+
+<p>Ukrainian superHero : <strong>{{ heroPower | async }}</strong></p>
