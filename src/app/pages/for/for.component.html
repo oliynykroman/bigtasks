@@ -1,1 +1,15 @@
-<p>for works!</p>
+<h2>Check track by mechanism</h2>
+<button (click)="otherArrayHero()">change array hero</button>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Index</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let hero of heroes; let even = even; let odd = odd; trackBy: trackHero"
+        [ngClass]="{ odd: odd, even: even }">
+            <td>{{hero.name}}</td>
+            <td>{{hero.id}}</td>
+        </tr>
+    </tbody>
+</table>
