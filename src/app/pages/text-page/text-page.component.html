@@ -3,6 +3,6 @@
 
 
 <button (click)="dublicate()">click me</button>
-<div *ngIf="dublicateText">
+<ng-container *ngIf="dublicateText">
 <p [innerHtml]="textObject.text"></p>
-</div>
+</ng-container>
