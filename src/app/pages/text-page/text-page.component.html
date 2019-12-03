@@ -1,0 +1,8 @@
+<h1>let's rock pipe</h1>
+<p [innerHtml]="textObject.text | truncator: 100"></p>
+
+
+<button (click)="dublicate()">click me</button>
+<div *ngIf="dublicateText">
+<p [innerHtml]="textObject.text"></p>
+</div>
