@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'for', loadChildren: () => import('./pages/for/for.module').then(mod => mod.ForModule) },
   { path: 'iframe', loadChildren: () => import('./pages/iframe/iframe.module').then(mod => mod.IframeModule) },
   { path: 'pipe', loadChildren: () => import('./pages/text-page/text-page.module').then(mod => mod.TextPageModule) },
+  { path: 'promise', loadChildren: () => import('./pages/promise/promise.module').then(mod => mod.PromiseModule) },
 ];
 
 @NgModule({
